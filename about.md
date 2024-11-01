@@ -2,7 +2,9 @@
 layout: page
 title: About
 ---
-![GitHub Logo](img/Vail_Seat.png)
+
+<img scr="img/Vail_Seat.png" />
+<h3><b>mac-<i>uh</i>-veyl-ee</b></h3>
 
 
 <p class="message">

@@ -3,7 +3,8 @@ layout: page
 title: About
 ---
 
-[center][alt text](img/Vail Seat.png)[/center]
+![text if the image fails to load](img/Vail Seat.png "Vail's Seat")
+
 <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
 </p>

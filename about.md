@@ -2,8 +2,9 @@
 layout: page
 title: About
 ---
-
-![text if the image fails to load](img/Vail Seat.png "Vail's Seat")
+https://github.com/mackavaili/mackavaili.github.io/blob/main/img/Vail%20Seat.png
+![text if the image fails to load]([img/Vail Seat.png](https://github.com/mackavaili/mackavaili.github.io/blob/main/img/Vail%20Seat.png
+) "Vail's Seat")
 
 <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!

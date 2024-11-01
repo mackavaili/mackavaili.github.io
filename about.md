@@ -4,7 +4,7 @@ title: About
 ---
 
 <img scr="https://mackavaili.github.io/img/Vail_Seat.png" />
-<h3><b>mac-<i>uh</i>-veyl-ee</b></h3>
+<h3><b>mæk-<i>uh</i>-veyl-ee</b></h3>
 
 
 <p class="message">

@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img scr="img/Vail_Seat.png" />
+<img scr="https://mackavaili.github.io/img/Vail_Seat.png" />
 <h3><b>mac-<i>uh</i>-veyl-ee</b></h3>
 
 

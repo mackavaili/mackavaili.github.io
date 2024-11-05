@@ -1,32 +1,82 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>no</title>
+    <title>mackavaili</title>
     <style>
-        /* Set page background color */
-        body {
+        /* Ensure page scales to fit any screen resolution */
+        body, html {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             font-family: Arial, sans-serif;
+            link-color: #dsdsds;
             background-color: #212121; /* Updated background color */
             color: #dadada; /* Updated font color */
         }
-
-        /* Center "no" text */
-        .center-text {
-            font-size: 20vw; /* Doubled font size */
+        /* Style for time and date */
+        #time {
+            font-size: 8vw;
             font-weight: bold;
-            text-transform: lowercase;
         }
+        #date {
+            font-size: 5vw;
+        }
+        /* Style for links */
+       	     a:link {
+  		color: white;
+  		background-color: transparent;
+  		text-decoration: none;
+		}
+
+	     a:visited {
+  		color: pink;
+               	background-color: transparent;
+  		text-decoration: none;
+		}
+
+	      a:hover {
+  		color: #8f8f8f;
+  		background-color: transparent;
+  		text-decoration: underline;
+		}
+
+	       a:active {
+ 		color: yellow;
+  		background-color: transparent;
+ 		text-decoration: underline;
+		}
     </style>
 </head>
 <body>
-    <div class="center-text">no<a rel="me" href="https://mastodon.social/@mackavaili"></a></div>
+
+    <div id="time">Loading...</div>
+    <div id="date">Loading...</div>
+
+    <script>
+        // Function to update time and date
+        function updateTime() {
+            const now = new Date();
+            // Format time and date
+            const time = now.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit', second: '2-digit'});
+            const date = now.toLocaleDateString([], {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'});
+
+            // Set the time and date on the page
+            document.getElementById('time').textContent = time;
+            document.getElementById('date').textContent = date;
+        }
+
+        // Initial call and update every second
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script><div><a href="https://bsky.app/profile/mackavaili.com"><img scr="https://raw.githubusercontent.com/mackavaili/mackavaili.github.io/refs/heads/main/bluesky.png" alt="Blue Sky (bsky.app)"></a>&nbsp;&nbsp;
+        <a href="https://mastodon.social/@mackavaili"><img scr="https://raw.githubusercontent.com/mackavaili/mackavaili.github.io/refs/heads/main/mastodon-social.png" alt="Mastodon (mastodon.social)"></a><a rel="me" href="https://mastodon.social/@mackavaili"></a><br><br></div>
 </body>
 </html>
-

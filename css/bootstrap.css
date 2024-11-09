@@ -5064,12 +5064,12 @@ footer ul > li:not(:last-child) {
 
 footer a {
   color: #000000;
-  font-weight: 700; }
+  font-weight: 200; }
 
 /* Icon Boxes */
 .icon-box {
   position: relative;
-  border-radius: 50%;
+  border-radius: 10%;
   display: inline-block;
   vertical-align: middle;
   background-color: #ffffff;

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>macka'vail'i</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --zoom-scale: 1.08;     /* How much to grow on hover/touch */
+      --zoom-time: 240ms;     /* Animation duration */
+      --bg: #ffffff;          /* Page background (tweak if you like) */
+    }
+
+    /* Full-viewport centering */
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100dvh;              /* handles mobile browser UI better */
+      display: grid;
+      place-items: center;              /* perfect vertical + horizontal centering */
+      background: var(--bg);
+      font-family: system-ui, sans-serif;
+    }
+
+    /* Keep link focus visible for keyboard users */
+    .zoom-link {
+      outline: none;
+      border-radius: 16px;              /* soft corner for focus ring */
+    }
+    .zoom-link:focus-visible {
+      box-shadow: 0 0 0 4px rgba(0, 120, 255, 0.25);
+    }
+
+    /* Responsive image + zoom-on-hover/touch */
+    .zoom-link img {
+      display: block;
+      height: auto;
+      /* Keep image comfortably sized on all screens */
+      max-width: min(90vw, 90vh);
+      width: clamp(240px, 60vmin, 1024px);
+      transform-origin: center;
+      transition: transform var(--zoom-time) ease, filter var(--zoom-time) ease;
+      will-change: transform;
+    }
+
+    /* Hover (mouse), focus (keyboard), and active (touch press) states */
+    .zoom-link:hover img,
+    .zoom-link:focus-visible img,
+    .zoom-link:active img {
+      transform: scale(var(--zoom-scale));
+      filter: drop-shadow(0 10px 24px rgba(0,0,0,.15));
+    }
+
+    /* Respect reduced-motion preferences */
+    @media (prefers-reduced-motion: reduce) {
+      .zoom-link img {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="zoom-link" href="https://mikevail.io" aria-label="Open mikevail.io">
+    <!-- Replace the src with your image path -->
+    <img src="image.png" alt="mackavaili" />
+  </a>
+</body>
+</html>
+
